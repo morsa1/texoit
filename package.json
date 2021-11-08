@@ -1,12 +1,25 @@
 {
+  "name": "texoit",
+  "version": "1.0.0",
+  "description": "texoit",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "%cd%/node_modules/.bin/cypress open",
+    "cypress:run": "%cd%/node_modules/.bin/cypress run --spec ** / *. spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/morsa1/texoit.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/morsa1/texoit/issues"
+  },
+  "homepage": "https://github.com/morsa1/texoit#readme",
   "devDependencies": {
     "cypress": "^8.7.0",
-    "cypress-cucumber-preprocessor": "^4.3.0"
-  },
-  "scripts": {
-    "test:chrome": "cypress run --browser chrome"
-},
-"cypress-cucumber-preprocessor": {
-    "step_definitions": "cypress/support/steps"
-}
+    "faker": "^5.5.3"
+  }
 }
